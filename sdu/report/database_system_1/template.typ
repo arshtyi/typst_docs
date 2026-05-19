@@ -4,13 +4,14 @@
 #import "@preview/codly-languages:0.1.10": *
 
 #let fonts = (main: "Source Han Serif SC", mono: "IBM Plex Mono", cjk: "Noto Serif CJK SC")
-#let course = "区块链原理"
+#let institute = "计算机科学与技术"
+#let course = "数据库系统"
 #let author = "arshtyi"
 #let id = "821600046"
 #let class = "xxx"
 #let date = datetime.today()
 #let title = "test"
-#let time = "2"
+#let email = link("mailto:arshtyi@foxmail.com")
 
 #set document(title: title, author: author, date: date)
 #set text(font: (fonts.main, fonts.cjk), size: zh(5), lang: "zh", region: "cn")
@@ -25,17 +26,31 @@
 #{
     set underline(offset: 2.5pt, extent: 2.5pt)
     show heading: it => align(center, text(tracking: .1em, size: zh(-2), it))
-    heading(numbering: none, level: 1)[山东大学 #underline[#course] 课程实验报告]
+    heading(numbering: none, level: 1)[山东大学 #underline[#institute] 学院\ #underline[#course] 课程实验报告]
     set text(size: zh(-4))
     set table.cell(inset: .5em, align: left + horizon, stroke: 1pt)
+    // table(
+    //     columns: (1.5fr,) + (1fr,) * 2,
+    //     [学号：#id], [姓名：#author], [日期：#date.display("[year].[month].[day]")],
+    // )
+    // v(0em, weak: true)
+    // table(
+    //     columns: (3fr, 1fr),
+    //     [实验题目：#title], [实验学时：#time],
+    // )
     table(
-        columns: (1.5fr,) + (1fr,) * 3,
-        [学号：#id], [姓名：#author], [班级：#class], [日期：#date.display("[year].[month].[day]")],
+        columns: (3fr, 1fr),
+        [题目：#title], [学号：#id],
     )
     v(0em, weak: true)
     table(
-        columns: (3fr, 1fr),
-        [题目：#title], [学时：#time],
+        columns: (1.5fr,) + (1fr,) * 2,
+        [日期：#date.display("[year].[month].[day]")], [班级：#class], [姓名：#author],
+    )
+    v(0em, weak: true)
+    table(
+        columns: 1fr,
+        [Email：#email]
     )
 }
 #show raw: set text(font: (fonts.mono, fonts.cjk))
@@ -69,7 +84,7 @@
         v(0em, weak: true)
         block(
             width: 100%,
-            inset: (x: 5pt, y: 1em),
+            inset: (x: 4pt, y: 1em),
             stroke: 1pt,
             breakable: true,
             it,
@@ -100,8 +115,14 @@
 }
 #show: in-block
 
-= 原理分析与步骤
+= 实验目的
+
+= 实验软件和硬件环境
+
+= 实验原理与方法
+
+= 实验步骤
 
 = 结论分析与体会
 
-#heading(level: 1)[#box(width: 100%, align(center)[附录])]
+= 实验过程中遇到和出现的问题及如何解决和处理

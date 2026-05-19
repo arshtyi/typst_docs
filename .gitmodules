@@ -1,0 +1,30 @@
+[submodule "sdu/slide/os"]
+	path = sdu/slide/os
+	url = https://github.com/arshtyi/typst-sdu-os-slide
+[submodule "sdu/rhs/letter"]
+	path = sdu/rhs/letter
+	url = https://github.com/arshtyi/typst-sdu-letter
+[submodule "sdu/rhs/lab"]
+	path = sdu/rhs/lab
+	url = https://github.com/arshtyi/SDU-Lab-Report
+[submodule "sdu/slide/touying"]
+	path = sdu/slide/touying
+	url = https://github.com/Dregen-Yor/sdu-touying-simpl
+[submodule "sdu/thesis"]
+	path = sdu/thesis
+	url = https://github.com/GrooveWJH/unofficial-sdu-thesis
+[submodule "contest/cumcm"]
+	path = contest/cumcm
+	url = https://github.com/a-kkiri/CUMCM-typst-template
+[submodule "rhs/ygo"]
+	path = rhs/ygo
+	url = https://github.com/arshtyi/typst-ygo
+[submodule "sdu/report/database_system_2"]
+	path = sdu/report/database_system_2
+	url = https://github.com/arshtyi/SDU-Database-System-Experiment-2
+[submodule "contest/acm"]
+	path = contest/acm
+	url = https://github.com/arshtyi/ACM-Templates
+[submodule "rhs/ygo-new-master-rule"]
+	path = rhs/ygo-new-master-rule
+	url = https://github.com/arshtyi/ygo_new_master_rule
