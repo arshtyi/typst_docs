@@ -5,7 +5,7 @@
 
 #let fonts = (main: "Source Han Serif SC", mono: "IBM Plex Mono", cjk: "Noto Serif CJK SC")
 #let institute = "计算机科学与技术"
-#let course = "计算概论"
+#let course = "创新创业教育实践实践"
 #let author = "arshtyi"
 #let id = "821600046"
 #let class = "xxx"
