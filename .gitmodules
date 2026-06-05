@@ -28,3 +28,6 @@
 [submodule "rhs/ygo-new-master-rule"]
 	path = rhs/ygo-new-master-rule
 	url = https://github.com/arshtyi/ygo_new_master_rule
+[submodule "sdu/report/database_system_3"]
+	path = sdu/report/database_system_3
+	url = https://github.com/arshtyi/SDU-Database-System-Experiment-3
